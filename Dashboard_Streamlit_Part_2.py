@@ -12,6 +12,7 @@ from datetime import datetime as dt
 from numerize import numerize
 from PIL import Image
 import plotly.express as px
+import json
 
 ########################### Initial settings for the dashboard ##################################################################
 
@@ -143,11 +144,11 @@ elif page == 'Most popular stations':
 ### MAP PAGE: INTERACTIVE MAP WITH AGGREGATED BIKE TRIPS
 
 elif page == 'Interactive map with aggregated bike trips': 
-
-    path_to_html = "NewYork Citi Bike Trips Aggregated.html" 
     
+    path_to_html = "NewYork_CitiBike_Trips.html" 
+
     # Read file and keep in variable
-    with open(path_to_html,'r') as f: 
+    with open(path_to_html, 'r') as f: 
         html_data = f.read()
         
     # Show in webpage
@@ -218,7 +219,7 @@ elif page == 'Classic versus electric bikes':
 else:
     
     st.header('Conclusions and Recommendations')
-    bikes = Image.open("CitiBike.jpg")  # Source: https://gothamist.com/news/bigger-faster-and-flashier-new-e-bikes-join-citi-bikes-fleet
+    bikes = Image.open('CitiBike_2.jpg')  # Source: https://gothamist.com/news/bigger-faster-and-flashier-new-e-bikes-join-citi-bikes-fleet
     st.image(bikes)
     st.markdown('Source: https://gothamist.com/news/bigger-faster-and-flashier-new-e-bikes-join-citi-bikes-fleet')
     st.markdown('### Our analysis has shown that NewYork CitiBikes should focus on the following objectives moving forward:')
