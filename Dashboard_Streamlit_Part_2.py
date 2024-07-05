@@ -219,7 +219,7 @@ elif page == 'Classic versus electric bikes':
 else:
     
     st.header('Conclusions and Recommendations')
-    bikes = Image.open('CitiBike_2.jpg')  # Source: https://gothamist.com/news/bigger-faster-and-flashier-new-e-bikes-join-citi-bikes-fleet
+    bikes = Image.open("CitiBike_2.JPG")  # Source: https://gothamist.com/news/bigger-faster-and-flashier-new-e-bikes-join-citi-bikes-fleet
     st.image(bikes)
     st.markdown('Source: https://gothamist.com/news/bigger-faster-and-flashier-new-e-bikes-join-citi-bikes-fleet')
     st.markdown('### Our analysis has shown that NewYork CitiBikes should focus on the following objectives moving forward:')
